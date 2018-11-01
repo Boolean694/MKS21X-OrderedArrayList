@@ -20,4 +20,11 @@ public class NoNullArrayList<T> extends ArrayList<T> {
 			return(super.add(obj));
 		}
 	}
+	
+	public void add(int ind, T obj) {
+		if(obj == null) {throw new IllegalArgumentException("Can't add null");}
+		else {
+			super.add(ind, obj);
+		}
+	}
 }
