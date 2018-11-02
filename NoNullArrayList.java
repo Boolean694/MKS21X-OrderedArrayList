@@ -4,6 +4,9 @@ public class NoNullArrayList<T> extends ArrayList<T> {
 	public NoNullArrayList() {
 		super();
 	}
+	public NoNullArrayList(int ic) {
+		super(ic);
+	}
 	
 	public T set(int ind, T el) {
 		if(el == null) {
